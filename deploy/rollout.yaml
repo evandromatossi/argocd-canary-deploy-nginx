@@ -3,7 +3,7 @@ kind: Rollout
 metadata:
   name: rollouts-demo
 spec:
-  replicas: 1
+  replicas: 10
   strategy:
     canary:
       canaryService: rollouts-demo-canary
@@ -12,7 +12,7 @@ spec:
         nginx:
           stableIngress: rollouts-demo-stable
       steps:
-      - setWeight: 5
+      - setWeight: 30
       - pause: {}
   revisionHistoryLimit: 2
   selector:
