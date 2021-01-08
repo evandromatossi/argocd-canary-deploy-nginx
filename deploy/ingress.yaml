@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: nginx-ingress-external
 spec:
   rules:
-  - host: rollouts-demo.local
+  - host: argocd-canary.viavarejo.com.br
     http:
       paths:
       - path: /
